@@ -3,14 +3,16 @@
   <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
   <remote fetch="https://github.com/OnePlusOSS" name="origin"/>
   <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
-  <project remote="origin" name="android_kernel_common_oneplus_sm8650" path="kernel_platform/common" revision="oneplus/sm8650_b_16.0.0_ace_5">
+  <!-- PKG110_16.0.0.205(CN01): device reports 6.1.118.  Pin every
+       OnePlus project together; tracking the mutable branch now yields 6.1.141. -->
+  <project remote="origin" name="android_kernel_common_oneplus_sm8650" path="kernel_platform/common" revision="8a82a099c89b90b54c8698db456ab8cf9a25b14e">
     <linkfile dest="kernel_platform/.source_date_epoch_dir" src="."/>
   </project>
-  <project remote="origin" name="android_kernel_oneplus_sm8650" path="kernel_platform/msm-kernel" revision="oneplus/sm8650_b_16.0.0_ace_5">
+  <project remote="origin" name="android_kernel_oneplus_sm8650" path="kernel_platform/msm-kernel" revision="9c349a72a250c9bfdc3360cc2a549c2c2d133fc6">
     <linkfile dest="kernel_platform/WORKSPACE" src="bazel.WORKSPACE"/>
     <linkfile dest="kernel_platform/build_with_bazel.py" src="build_with_bazel.py"/>
   </project>
-  <project remote="origin" name="android_kernel_modules_and_devicetree_oneplus_sm8650" path="./" revision="oneplus/sm8650_b_16.0.0_ace_5"/>
+  <project remote="origin" name="android_kernel_modules_and_devicetree_oneplus_sm8650" path="./" revision="cc77e10a4c9de81d7523313771e327b8d7d949ab"/>
   <project remote="clo-la" name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="d153b7ab4a4956198957e258d4f370e875c53059" upstream="refs/heads/ks-kernel.lnx.3.0.r1-rel">
     <linkfile dest="kernel_platform/build/prebuilts/kernel-build-tools" src="."/>
   </project>
