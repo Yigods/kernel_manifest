@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- action-build: cpu=sm8650 android_version=16.0.0 -->
   <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
   <remote fetch="https://github.com/OnePlusOSS" name="origin"/>
   <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
